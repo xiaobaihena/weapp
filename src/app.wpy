@@ -32,13 +32,13 @@ wepy.app({
       list: [{
         pagePath:'pages/index',    
         text: '首页',
-        iconPath: 'static/images/index.png',
-        selectedIconPath: 'static/images/index_selected.png'
+        iconPath: 'assets/images/index.png',
+        selectedIconPath: 'assets/images/index_selected.png'
       },{
         pagePath:'pages/user',
         text: '我的',
-        iconPath: 'static/images/user.png',
-        selectedIconPath: 'static/images/user_selected.png'
+        iconPath: 'assets/images/user.png',
+        selectedIconPath: 'assets/images/user_selected.png'
       }],
       color: '#707070',
       selectedColor: '#00b5ad'
