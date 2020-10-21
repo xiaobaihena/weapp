@@ -15,10 +15,21 @@ wepy.use(vuex);
 wepy.use(promisify);
 
 wepy.app({
-  onLaunch() {
-    wepy.wx.login().then((res) => {
-      console.log('login:', res);
-    });
+  //await 那么方法前必须增加 async 关键字
+  async onLaunch() {
+    //1.原始小程序开发
+    // wx.login({
+    //   success: function(res) {
+    //     console.log(res)
+    //   }
+    // })
+    // 2.WePY 中使用 promise
+    // wepy.wx.login().then((res) => {
+    //   console.log('login:', res);
+    // });
+    // WePY 中使用 Await
+    const res = await wepy.wx.login();
+    console.log(res);
   },
   methods: {},
 });
@@ -27,7 +38,8 @@ wepy.app({
 {
     pages: [
       'pages/index',
-      'pages/user'
+      'pages/user',
+      'pages/auth/login',
     ],
     window: {
       backgroundTextStyle: 'light',
