@@ -135,11 +135,11 @@ wepy.page({
     },
   },
   // 页面打开事件
-  async onShow() {
-    try {
-      await this.$store.dispatch('login');
-      wx.navigateBack();
-    } catch (err) {}
-  },
+  // async onShow() {
+  //   try {
+  //     await this.$store.dispatch('login');
+  //     wx.navigateBack();
+  //   } catch (err) {}
+  // },
 });
 </script>
