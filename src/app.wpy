@@ -40,7 +40,8 @@ wepy.app({
       'pages/index',
       'pages/users/me',
       'pages/auth/login',
-      'pages/auth/register'
+      'pages/auth/register',
+      'pages/users/edit'
     ],
     window: {
       backgroundTextStyle: 'light',
