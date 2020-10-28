@@ -40,3 +40,10 @@ export function getVerificationCode(key, code) {
     },
   });
 }
+// 注册接口
+export function register(data) {
+  return request('weapp/users', {
+    method: 'post',
+    data: data,
+  });
+}
